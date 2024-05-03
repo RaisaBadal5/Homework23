@@ -8,18 +8,35 @@
 import UIKit
 
 protocol MainCoordinatorDelegate: AnyObject {
-    func navigateToFactScreen()
+    func navigateToFactScreen(with length: Int)
 }
 
-class FunctionsForMainPage: MainCoordinatorDelegate {
+class FunctionsForMainPage: NSObject {
+    
+    // MARK: - Properties
+    
     weak var viewController: UIViewController?
-
+    private let networkingService = NetworkingService()
+    
+    // MARK: - Initialization
+    
     init(viewController: UIViewController) {
         self.viewController = viewController
     }
-
-    func navigateToFactScreen() {
-        let factViewController = FactViewController()
-        viewController?.navigationController?.pushViewController(factViewController, animated: true)
+    
+    // MARK: - Fact Handling
+    
+    func handleFetchedData() -> String {
+        return networkingService.getFact() ?? "Undefined"
+    }
+    
+    // MARK: - Navigation
+    
+    func navigateToFactScreen(with length: Int) {
+        networkingService.setLength(length)
+        let factViewController = FactViewController(functionsForMainPage: self)
+        if let navigationController = viewController?.navigationController {
+            navigationController.pushViewController(factViewController, animated: true)
+        }
     }
 }

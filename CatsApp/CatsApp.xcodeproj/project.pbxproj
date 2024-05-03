@@ -15,6 +15,7 @@
 		043D5F7B2BE4C7FA005E554A /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D5F7A2BE4C7FA005E554A /* CatModel.swift */; };
 		043D5F7E2BE4C8C6005E554A /* FunctionsForMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D5F7D2BE4C8C6005E554A /* FunctionsForMainPage.swift */; };
 		043D5F822BE4C8FC005E554A /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D5F812BE4C8FC005E554A /* FactViewController.swift */; };
+		043D5F842BE4EBE7005E554A /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D5F832BE4EBE7005E554A /* NetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		043D5F7A2BE4C7FA005E554A /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
 		043D5F7D2BE4C8C6005E554A /* FunctionsForMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsForMainPage.swift; sourceTree = "<group>"; };
 		043D5F812BE4C8FC005E554A /* FactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewController.swift; sourceTree = "<group>"; };
+		043D5F832BE4EBE7005E554A /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				043D5F7D2BE4C8C6005E554A /* FunctionsForMainPage.swift */,
+				043D5F832BE4EBE7005E554A /* NetworkingService.swift */,
 			);
 			path = ModelViews;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				043D5F7E2BE4C8C6005E554A /* FunctionsForMainPage.swift in Sources */,
 				043D5F602BE4BD2C005E554A /* AppDelegate.swift in Sources */,
 				043D5F7B2BE4C7FA005E554A /* CatModel.swift in Sources */,
+				043D5F842BE4EBE7005E554A /* NetworkingService.swift in Sources */,
 				043D5F622BE4BD2C005E554A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

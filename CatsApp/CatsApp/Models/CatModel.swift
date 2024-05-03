@@ -9,10 +9,9 @@ import Foundation
 
 struct CatModel: Decodable {
     var fact: String
-    var lenght: Int
+    
     enum CodingKeys: String, CodingKey {
         case fact
-        case lenght
     }
     
 }
